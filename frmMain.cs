@@ -26,20 +26,18 @@ namespace AS2122_4E_INF_TogniEmanuele_Palestra
 
             if(chkSpinning.Checked == true)
             {
-                preventivo += prezzoSpinning * mesi*persone;
+                preventivo += prezzoSpinning * mesi * persone;
             }
             if (chkDanza.Checked == true)
             {
-                preventivo += prezzoDanza * mesi;
+                preventivo += prezzoDanza * mesi * persone;
             }
             if (chkPesi.Checked == true)
             {
-                preventivo += prezzoPesi * mesi;
+                preventivo += prezzoPesi * mesi * persone;
             }
 
             lblPreventivo.Text = preventivo.ToString();
         }
-
-        
     }
 }
